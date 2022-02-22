@@ -23,11 +23,11 @@ requirements:
   run:
     - dask
     - geopandas >=0.8
-    - hydromt >=0.4.0
+    - hydromt >=0.4.5
     - netcdf4
     - numpy
     - pandas
-    - pyflwdir >=0.4.7
+    - pyflwdir >=0.5.5
     - pygeos
     - python >=3.8
     - rasterio
