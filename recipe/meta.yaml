@@ -1,5 +1,5 @@
 {% set name = "hydromt_wflow" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt_wflow-{{ version }}.tar.gz
-  sha256: b513e795011859e053a677c6789b74eac704286b0ab814b2fb33ce6eff83e487
+  sha256: b05588dac139f69fd2e957f40c3c4e5ad7d434462c936f6dbb0c3d17190041dd
 
 build:
   number: 0
@@ -22,16 +22,19 @@ requirements:
     - python >=3.8
   run:
     - dask
-    - geopandas >=0.8
-    - hydromt >=0.4.5
+    - geopandas >=0.10
+    - hydromt >=0.5.0
     - netcdf4
     - numpy
     - pandas
     - pyflwdir >=0.5.5
     - pygeos
+    - pyproj
     - python >=3.8
     - rasterio
+    - rioxarray
     - scipy
+    - shapely
     - toml
     - xarray
 
