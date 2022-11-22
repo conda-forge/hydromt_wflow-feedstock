@@ -1,5 +1,5 @@
 {% set name = "hydromt_wflow" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt_wflow-{{ version }}.tar.gz
-  sha256: b05588dac139f69fd2e957f40c3c4e5ad7d434462c936f6dbb0c3d17190041dd
+  sha256: cd70f28bbcfe590639ed36e74c07353da7fcee77f5832b9d69ccdbe5c794582a
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - netcdf4
     - numpy
     - pandas
-    - pyflwdir >=0.5.5
+    - pyflwdir >=0.5.6
     - pygeos
     - pyproj
     - python >=3.8
