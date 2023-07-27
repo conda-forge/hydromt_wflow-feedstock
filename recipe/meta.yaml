@@ -30,7 +30,6 @@ requirements:
     - pyflwdir >=0.5.7
     - pyproj
     - python >=3.8
-    - rasterio
     - rioxarray
     - scipy
     - shapely
