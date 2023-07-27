@@ -1,11 +1,11 @@
-About hydromt_wflow
-===================
+About hydromt_wflow-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydromt_wflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/hydromt_wflow/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydromt_wflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: hydroMT plugin for wflow models.
 
@@ -146,5 +146,6 @@ Feedstock Maintainers
 =====================
 
 * [@DirkEilander](https://github.com/DirkEilander/)
+* [@JoostBuitink](https://github.com/JoostBuitink/)
 * [@hboisgon](https://github.com/hboisgon/)
 
