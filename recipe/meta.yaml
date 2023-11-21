@@ -23,7 +23,7 @@ requirements:
   run:
     - dask
     - geopandas >=0.10
-    - hydromt >=0.8,<0.9
+    - hydromt >=0.9.1,<0.10
     - netcdf4
     - numpy
     - pandas
