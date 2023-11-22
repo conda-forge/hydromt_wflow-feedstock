@@ -19,11 +19,10 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.8
+    - python >=3.9
   run:
     - dask
     - geopandas >=0.10
-    - hydroengine
     - hydromt >=0.9.1,<0.10
     - netcdf4
     - numpy
@@ -36,6 +35,8 @@ requirements:
     - shapely
     - toml
     - xarray
+    - pip:
+      - hydroengine
 
 test:
   imports:
