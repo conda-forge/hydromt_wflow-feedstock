@@ -29,7 +29,7 @@ requirements:
     - pandas
     - pyflwdir >=0.5.7
     - pyproj
-    - python >=3.8
+    - python >=3.9
     - rioxarray
     - scipy
     - shapely
