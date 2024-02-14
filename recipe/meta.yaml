@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.9,<3.12
+    - python >=3.9
   run:
     - dask
     - geopandas >=0.10
@@ -29,11 +29,12 @@ requirements:
     - pandas
     - pyflwdir >=0.5.7
     - pyproj
-    - python >=3.9,<3.12
+    - python >=3.9
     - rioxarray
     - scipy
     - shapely
     - toml
+    - universal_pathlib <0.2
     - xarray
 
 test:
