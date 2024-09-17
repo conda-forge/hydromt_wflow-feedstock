@@ -25,16 +25,16 @@ requirements:
     - geopandas >=0.10
     - hydromt >=0.9.4,<0.11
     - netcdf4
-    - numpy
+    - numpy >=1.23,<2
     - pandas
     - pyflwdir >=0.5.7
     - pyproj
-    - python >=3.9
+    - python >=3.9,<3.12
     - rioxarray
     - scipy
     - shapely
     - toml
-    - xarray
+    - xarray <=2024.3.0
 
 test:
   imports:
