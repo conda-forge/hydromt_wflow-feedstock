@@ -30,7 +30,7 @@ requirements:
     - pyflwdir >=0.5.7
     - pyproj
     - python >={{ python_min }},<3.12
-    - rioxarray
+    - rioxarray <=0.17.0
     - scipy
     - shapely
     - toml
