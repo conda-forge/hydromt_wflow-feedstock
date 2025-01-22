@@ -148,5 +148,6 @@ Feedstock Maintainers
 * [@DirkEilander](https://github.com/DirkEilander/)
 * [@JoostBuitink](https://github.com/JoostBuitink/)
 * [@dalmijn](https://github.com/dalmijn/)
+* [@deltares-service-account](https://github.com/deltares-service-account/)
 * [@hboisgon](https://github.com/hboisgon/)
 

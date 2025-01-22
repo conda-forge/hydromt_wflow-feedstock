@@ -11,7 +11,7 @@ source:
   sha256: 6b76bd7bb0d3637a657cba3d5f9d4832c5e6d7b2f861dc9dd680ac12fb25bce1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.9
+    - python {{ python_min }}
   run:
     - dask
     - geopandas >=0.10
@@ -29,8 +29,8 @@ requirements:
     - pandas
     - pyflwdir >=0.5.7
     - pyproj
-    - python >=3.9,<3.12
-    - rioxarray
+    - python >={{ python_min }},<3.12
+    - rioxarray <=0.17.0
     - scipy
     - shapely
     - toml
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/hydromt_wflow/
