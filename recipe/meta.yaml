@@ -24,18 +24,18 @@ requirements:
   run:
     - dask
     - geopandas >=0.10
-    - hydromt >=0.9.4,<0.11
+    - hydromt >=0.10.1,<0.11
     - netcdf4
-    - numpy >=1.23,<2
+    - numpy
     - pandas
     - pyflwdir >=0.5.7
     - pyproj
     - python >={{ python_min }},<3.12
-    - rioxarray <=0.17.0
+    - rioxarray
     - scipy
     - shapely
     - toml
-    - xarray <=2024.3.0
+    - xarray
 
 test:
   imports:
