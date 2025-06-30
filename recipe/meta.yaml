@@ -1,7 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hydromt_wflow" %}
-{% set version = "0.8.0" %}
-
+{% set version = "1.0.0rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt_wflow-{{ version }}.tar.gz
-  sha256: 6613c35c1f54b29266d249b92be7e8d10d6f6ca8779875899627976747e0f24d
+  sha256: b238803069031dcf556e7a068d286078b02c7c2ff6232fecffe386d7f012c612
 
 build:
   number: 0
@@ -19,22 +18,20 @@ build:
 requirements:
   host:
     - pip
-    - flit
+    - flit >=3.4.0,<4
     - python {{ python_min }}
   run:
     - dask
     - geopandas >=0.10
     - hydromt >=0.10.1,<0.11
-    - netcdf4
     - numpy
     - pandas
     - pyflwdir >=0.5.7
     - pyproj
     - python >={{ python_min }},<3.12
-    - rioxarray
     - scipy
     - shapely
-    - toml
+    - tomlkit >=0.13.3
     - xarray
 
 test:
@@ -48,8 +45,9 @@ test:
 
 about:
   home: https://pypi.org/project/hydromt_wflow/
-  summary: hydroMT plugin for wflow models.
+  summary: HydroMT plugin for wflow models.
   dev_url: https://github.com/Deltares/hydromt_wflow
+  doc_url: https://deltares.github.io/hydromt_wflow/stable/
   license: GPL-3.0-or-later
   license_file: LICENSE
 
