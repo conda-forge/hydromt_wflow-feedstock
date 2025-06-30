@@ -7,9 +7,11 @@ Home: https://pypi.org/project/hydromt_wflow/
 
 Package license: GPL-3.0-or-later
 
-Summary: hydroMT plugin for wflow models.
+Summary: HydroMT plugin for wflow models.
 
 Development: https://github.com/Deltares/hydromt_wflow
+
+Documentation: https://deltares.github.io/hydromt_wflow/stable/
 
 Current build status
 ====================
@@ -29,19 +31,19 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-hydromt_wflow-green.svg)](https://anaconda.org/conda-forge/hydromt_wflow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hydromt_wflow.svg)](https://anaconda.org/conda-forge/hydromt_wflow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hydromt_wflow.svg)](https://anaconda.org/conda-forge/hydromt_wflow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hydromt_wflow.svg)](https://anaconda.org/conda-forge/hydromt_wflow) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hydromt__wflow-green.svg)](https://anaconda.org/conda-forge/hydromt_wflow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hydromt_wflow.svg)](https://anaconda.org/conda-forge/hydromt_wflow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hydromt_wflow.svg)](https://anaconda.org/conda-forge/hydromt_wflow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hydromt_wflow.svg)](https://anaconda.org/conda-forge/hydromt_wflow) |
 
 Installing hydromt_wflow
 ========================
 
-Installing `hydromt_wflow` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `hydromt_wflow` from the `conda-forge/label/hydromt_wflow_rc` channel can be achieved by adding `conda-forge/label/hydromt_wflow_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/hydromt_wflow_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `hydromt_wflow` can be installed with `conda`:
+Once the `conda-forge/label/hydromt_wflow_rc` channel has been enabled, `hydromt_wflow` can be installed with `conda`:
 
 ```
 conda install hydromt_wflow
@@ -56,26 +58,26 @@ mamba install hydromt_wflow
 It is possible to list all of the versions of `hydromt_wflow` available on your platform with `conda`:
 
 ```
-conda search hydromt_wflow --channel conda-forge
+conda search hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search hydromt_wflow --channel conda-forge
+mamba search hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search hydromt_wflow --channel conda-forge
+mamba repoquery search hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
 
 # List packages depending on `hydromt_wflow`:
-mamba repoquery whoneeds hydromt_wflow --channel conda-forge
+mamba repoquery whoneeds hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
 
 # List dependencies of `hydromt_wflow`:
-mamba repoquery depends hydromt_wflow --channel conda-forge
+mamba repoquery depends hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
 ```
 
 
