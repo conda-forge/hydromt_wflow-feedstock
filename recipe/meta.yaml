@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hydromt_wflow" %}
-{% set version = "1.0.0rc1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt_wflow-{{ version }}.tar.gz
-  sha256: b238803069031dcf556e7a068d286078b02c7c2ff6232fecffe386d7f012c612
+  sha256: d187f7317de952ba07ae36b484b900f88b1e0f4f5de5f1a368bedc88db9c23f1
 
 build:
   number: 0
