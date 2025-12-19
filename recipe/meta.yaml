@@ -18,7 +18,8 @@ build:
 requirements:
   host:
     - pip
-    - flit >=3.4.0,<4
+    - setuptools >=61
+    - wheel
     - python {{ python_min }}
   run:
     - dask
@@ -60,4 +61,4 @@ extra:
     - DirkEilander
     - hboisgon
     - LuukBlom
-    
+
