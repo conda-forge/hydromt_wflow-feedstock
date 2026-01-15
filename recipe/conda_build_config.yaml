@@ -1,2 +1,8 @@
+# We always upload to conda-forge, so DO NOT change that.
+# Differentiate pre-releases by replacing `main` with `hydromt_wflow_rc`
+# These will then not be installed by users if they would do `conda install -c conda-forge hydromt_wflow`
+# They can be installed with `conda install -c conda-forge/label/hydromt_wflow_rc hydromt_wflow` 
+
+# - channel label
 channel_targets:
-  - conda-forge hydromt_wflow_rc
+  - conda-forge main

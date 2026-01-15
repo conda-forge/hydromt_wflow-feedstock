@@ -36,14 +36,14 @@ Current release info
 Installing hydromt_wflow
 ========================
 
-Installing `hydromt_wflow` from the `conda-forge/label/hydromt_wflow_rc` channel can be achieved by adding `conda-forge/label/hydromt_wflow_rc` to your channels with:
+Installing `hydromt_wflow` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
-conda config --add channels conda-forge/label/hydromt_wflow_rc
+conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge/label/hydromt_wflow_rc` channel has been enabled, `hydromt_wflow` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `hydromt_wflow` can be installed with `conda`:
 
 ```
 conda install hydromt_wflow
@@ -58,26 +58,26 @@ mamba install hydromt_wflow
 It is possible to list all of the versions of `hydromt_wflow` available on your platform with `conda`:
 
 ```
-conda search hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
+conda search hydromt_wflow --channel conda-forge
 ```
 
 or with `mamba`:
 
 ```
-mamba search hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
+mamba search hydromt_wflow --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
+mamba repoquery search hydromt_wflow --channel conda-forge
 
 # List packages depending on `hydromt_wflow`:
-mamba repoquery whoneeds hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
+mamba repoquery whoneeds hydromt_wflow --channel conda-forge
 
 # List dependencies of `hydromt_wflow`:
-mamba repoquery depends hydromt_wflow --channel conda-forge/label/hydromt_wflow_rc
+mamba repoquery depends hydromt_wflow --channel conda-forge
 ```
 
 
