@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "hydromt_wflow" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt_wflow-{{ version }}.tar.gz
-  sha256: a875630c4facda9d795ec9e158a7554ec5067a9d11245939c3b0aa83af7012aa
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/hydromt_wflow-{{ version }}.tar.gz
+  sha256: 2da3218363dd4bf4156b4f21e8dcd11617f0c0a63694e880b63b725fc7fc6fa1
 
 build:
   number: 0
@@ -22,18 +22,21 @@ requirements:
     - wheel
     - python {{ python_min }}
   run:
+    - python >={{ python_min }}
+    - affine <3.0
     - dask
+    - deprecated
     - geopandas >=0.10
-    - hydromt >=1.3.0
-    - numpy
-    - pandas
+    - hydromt >=1.4.1
+    - numpy <2.5
+    - rasterio
+    - pandas <4
     - pyflwdir >=0.5.7
     - pyproj
-    - python >={{ python_min }}
-    - pooch
     - scipy
     - shapely
     - xarray
+    - pooch
 
 test:
   imports:
